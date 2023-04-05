@@ -1,0 +1,123 @@
+body{
+    width: 100%;
+    background-image: linear-gradient(45deg, rgb(4, 171, 255), rgb(255, 255, 255));
+}
+/*--principio nav--*/
+nav{
+    background-color: rgb(101, 227, 244);
+    height: 80px;
+    width: 100%;
+
+}
+nav .enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+nav .logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 25px 0px 0px;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+li a.active, li:hover{
+    background: #02c8ff;
+    transition: .5s;
+}
+/*--final nav--*/
+
+.centro{
+    text-align: center;
+    width: 100%;
+}
+@media (max-width:1000px){
+    .dos{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.formularios{
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgba(0, 91, 175, 0.24);
+    margin-left: 150px;
+    margin-top: 150px
+
+}
+.formularios h2{
+    margin-top: 20%;
+}
+.formularios form input{
+    width: 60%;
+    margin-top: 10px;
+    height: 30px;
+}
+.formularios form textarea{
+    width: 40%;
+    margin-top: 10px;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(101, 227, 244);
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 20px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box img{
+    width: 80px;
+    height: 80px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #02c8ff;
+    text-align: center;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    color: black;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #0245ff;
+    font-size: 20px;
+}

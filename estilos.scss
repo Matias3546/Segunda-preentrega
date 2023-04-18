@@ -26,7 +26,7 @@ nav ul li{
     margin: 0px 25px 0px 0px;
 }
 nav ul li a{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -70,6 +70,7 @@ li a.active, li:hover{
 .pie-pagina{
     width: 100%;
     background-color: rgb(101, 227, 244);
+    margin-top: 30px;
 }
 
 .pie-pagina .grupo-1{
@@ -93,7 +94,7 @@ li a.active, li:hover{
     height: 80px;
 }
 .pie-pagina .grupo-1 .box h2{
-    color: white;
+    color: rgb(0, 0, 0);
     margin-bottom: 25px;
     font-size: 20px;
 }
@@ -122,6 +123,8 @@ li a.active, li:hover{
 
 /**--FOTER--*/
 
+
+/**--CENTRO--*/
 .grid-layout{
     width: 100%;
     padding: 0;
@@ -145,7 +148,8 @@ li a.active, li:hover{
 .descripcion{
     grid-column: 3 / 5;
     text-align: center;
-    margin-top: 80px;
+    align-items: center;
+    padding-top: 80px;
 
 }
 .descripcion .folleto{
@@ -157,6 +161,14 @@ li a.active, li:hover{
     color: white;
     padding: 6px;
     background-color: rgb(255, 5, 5);
+}
+.glow::before , .glow::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+
+    background: linear-gradient(45deg, aqua, pink, yellow);
 }
 
 .otrosvehiculos{
@@ -191,6 +203,7 @@ li a.active, li:hover{
     border-left: 2px solid black;
 }
 
+/**--CENTRO--*/
 @media only screen and (max-width: 580px){
 
     .grid-layout{

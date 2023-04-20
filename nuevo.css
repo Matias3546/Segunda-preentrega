@@ -45,12 +45,14 @@ li a.active, li:hover {
 /*--final nav--*/
 /*--CENTRO SOMOS--*/
 .centro {
+  margin-top: 200px;
   text-align: center;
   width: 100%;
 }
 
 .formularios h2 {
   margin: 15px 0;
+  padding-top: 30px;
 }
 
 .formularios form input {
@@ -60,7 +62,8 @@ li a.active, li:hover {
 }
 
 .formularios form textarea {
-  width: 40%;
+  width: 60%;
+  height: 100px;
   margin-top: 10px;
 }
 

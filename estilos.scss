@@ -30,6 +30,8 @@ nav ul li a{
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
+    font-size: 24px;
+    text-decoration: none;
 }
 li a.active, li:hover{
     background: #02c8ff;
@@ -138,6 +140,7 @@ li a.active, li:hover{
     text-align: center;
     align-items: center;
     transition: all 300ms ease;
+    text-decoration: none;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: aqua;
@@ -192,6 +195,12 @@ li a.active, li:hover{
     background-color: rgb(255, 5, 5);
 }
 
+.link1:hover{
+color: black;
+background-color: white;
+font-size: 24px;
+}
+
 
 .otrosvehiculos{
     grid-column: 1 / 5;
@@ -230,6 +239,10 @@ li a.active, li:hover{
 /*--RESPONSIVE--*/
 @media only screen and (max-width: 580px){
 
+    nav ul li a{
+        font-size: 16px;
+    }
+
     .grid-layout{
         grid-template-columns: 1fr;
         grid-template-rows: 0.7fr 0.3fr;
@@ -264,6 +277,11 @@ li a.active, li:hover{
         height: 220px;
         margin-top: 10px;
         border:none;
+    }
+    .formularios{
+        width: 80%;
+        height: 90%;
+        margin-left: 13%;
     }
 }
 

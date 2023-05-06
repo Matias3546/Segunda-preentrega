@@ -1,20 +1,27 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Giama Citroen - Preguntas frencuentes</title>
-        <script src="https://kit.font-awesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="../css/nuevo.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giama Citroen - Preguntas frencuentes</title>
+    <script src="https://kit.font-awesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/nuevo.css">
+</head>
+
 <body>
     <header>
         <div class="header">
             <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <a href="#" class="enlace">
                     <img src="../assets/logo.png" alt="" class="logo">
                 </a>
@@ -22,45 +29,157 @@
                     <li><a href="../index.HTML"> Inicio</a></li>
                     <li><a href="somos.html"> Quienes somos</a></li>
                     <li><a href="frecuentes.html"> Preguntas frecuentes</a></li>
-                    <li><a href="./frecuentes.html"> Vehiculos</a></li>
+                    <li><a href="./vehiculos.html"> Vehiculos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="titulo-vehiculos">
-        <h2>MUESTRA DE VEHICULOS</h2>
+    <div class="subtitulos-vehiculos">
+        <h1>Te presentamos los nuevos modelos fabricados por Citroen Argentina</h1>
+        <p>Te invitamos a conocer las nuevades unidades que se comenzaron a fabricar en Argentina partir de enero del 2023 hemos tomado la decisión de empezar a fabricar en argentina los nuevos modelos
+            creados por la marca en los últimos 2 años. Estos vehiculos son los mejores calificados en cuanto a precio, calidad, seguridad y confort. </p>
     </div>
-<div class="muestra1">
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-1">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c3-2.png" alt="">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-2">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c3-3.jpg" alt="">
+                    <a href="#itemCarrousel-3">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-3">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-2">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c3-4.png" alt="">
+                    <a href="#itemCarrousel-1">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../assets/c3-1.jpg" class="d-block w-100" alt="carrusel1">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/c3-3.jpg" class="d-block w-100" alt="carrusel1">
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/c3-4.png" class="d-block w-100" alt="carrusel1">
-          </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-1">•</a>
+            <a href="#itemCarrousel-2">•</a>
+            <a href="#itemCarrousel-3">•</a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
     </div>
-
-
-
+    <div class="subtitulos-vehiculos">
+        <h2>NUEVO CITROEN C4</h2>
+    </div>
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-4">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-6">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c4-2.jpg" alt="">
+                    <a href="#itemCarrousel-5">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-5">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-4">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c4-6.png" alt="">
+                    <a href="#itemCarrousel-6">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-6">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-5">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c4-3.jpg" alt="">
+                    <a href="#itemCarrousel-4">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-4">•</a>
+            <a href="#itemCarrousel-5">•</a>
+            <a href="#itemCarrousel-6">•</a>
+        </div>
+    </div>
+    <div class="subtitulos-vehiculos">
+        <h2>NUEVO CITROEN C5</h2>
+    </div>
+    <div class="carrousel">
+        <div class="conteCarrousel">
+            <div class="itemCarrousel" id="itemCarrousel-7">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-9">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c5-1.png" alt="">
+                    <a href="#itemCarrousel-8">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-8">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-7">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c5-2.png" alt="">
+                    <a href="#itemCarrousel-9">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="itemCarrousel" id="itemCarrousel-9">
+                <div class="itemCarrouselTarjeta"></div>
+                <div class="itemCarrouselArrows">
+                    <a href="#itemCarrousel-8">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <img src="../assets/c5-4.jpg" alt="">
+                    <a href="#itemCarrousel-7">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="conteCarrouselController">
+            <a href="#itemCarrousel-7">•</a>
+            <a href="#itemCarrousel-8">•</a>
+            <a href="#itemCarrousel-">•</a>
+        </div>
+    </div>
 
 
     <footer class="pie-pagina">
@@ -85,6 +204,7 @@
             <small>&copy; 2023 <b>Giama</b> Todos los derechos reservados</small>
         </div>
     </footer>
-    
+
 </body>
+
 </html>

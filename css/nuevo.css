@@ -313,6 +313,7 @@ nav #check {
 /*--FRECUENTES--*/
 .subtitulos-vehiculos {
   width: 100vw;
+  text-align: center;
 }
 .subtitulos-vehiculos h1 {
   text-align: center;

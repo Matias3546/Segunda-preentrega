@@ -1,0 +1,341 @@
+body{
+    width: 100%;
+    background-image: linear-gradient(45deg, rgb(4, 171, 255), rgb(255, 255, 255));
+}
+
+    $color-principal : white;
+    $color-secundario: #02c8ff;
+    $font-size-parrafos : 16px;
+
+
+/*--principio nav--*/
+nav{
+    background-color: rgb(101, 227, 244);
+    height: 80px;
+    width: 100%;
+
+
+    .enlace{
+        position: absolute;
+        padding: 20px 50px;
+    }
+    .logo{
+    height: 50px;
+    }
+    ul{
+        float: right;
+        margin-right: 20px;
+      
+        li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0px 25px 0px 0px;
+        
+            a{
+                color: rgb(0, 0, 0);
+                font-size: 18px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                font-size: 24px;
+                text-decoration: none;
+    
+                a.active, li:hover{
+                    background: $color-secundario;
+                    transition: 1s;
+                }
+            }   
+        }
+    }
+}
+/*--final nav--*/
+
+/*--CENTRO SOMOS--*/
+.centro{
+    text-align: center;
+    width: 100%;
+
+    .formularios{
+        background-color: $color-principal;
+        position: relative;
+        margin: 10% auto;
+        width: 50%;
+        height: 55%;
+
+        h2{
+            margin: 15px 0;
+            padding-top: 30px;
+        }
+
+        form{
+
+            input{
+                width: 60%;
+                margin-top: 10px;
+                height: 30px;
+            }
+
+            textarea{
+                width: 60%;
+                height: 100px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .glow::before , glow::after{
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        background: linear-gradient(45deg, #02c8ff, blue, #02c8ff, blue);
+        background-size: 400%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: -1;
+        animation:  AnimTest 20s linear infinite;
+    }
+    @keyframes AnimTest{
+        0%{
+            background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
+    .glow::after{
+        filter:blur(20px)
+    }
+
+}
+
+/*--CENTRO SOMOS--*/
+
+/**--FOTER--*/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(101, 227, 244);
+    margin-top: 30px;
+
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        padding: 20px 0px;
+
+        .box{ 
+            figure{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+            img{
+                width: 80px;
+                height: 80px;
+            }
+            h2{
+                color: rgb(0, 0, 0);
+                margin-bottom: 25px;
+                font-size: 20px;
+            }
+        }
+        .red-social{
+
+            a{
+                display: inline-block;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: $color-principal;
+                margin-right: 10px;
+                background-color: $color-secundario;
+                text-align: center;
+                align-items: center;
+                transition: all 300ms ease;
+                text-decoration: none;
+            }
+            a:hover{
+                color: aqua;
+            }
+        }
+    }
+    .grupo-2{
+        color: black;
+        padding: 15px 10px;
+        text-align: center;
+        background-color: #0245ff;
+        font-size: 20px;
+        height: 45px;
+    }
+}
+
+/**--FOTER--*/
+
+
+/**--CENTRO INICIO--*/
+.grid-layout{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+    grid-template-rows: auto auto auto;
+    row-gap: 25px;
+    background-image: linear-gradient(45deg, rgb(4, 171, 255), rgb(255, 255, 255));
+
+    .c3{
+    grid-column: 1 / 3;
+
+        img{
+            width: 100%;
+            height: 100%;
+            margin: 5px;
+            margin-top: -10px;
+
+        }   
+    }
+
+    .descripcion{
+        grid-column: 3 / 5;
+        text-align: center;
+        align-items: center;
+        padding: 80px 20px 0px 20px;
+
+        .folleto{
+            margin-top: 50px;
+        }
+
+        .link1{
+            border: 2px solid black;
+            font-weight: 600;
+            color: rgb(0, 0, 0);
+            padding: 6px;
+            background-color: $color-principal;
+        }
+
+        .link1:hover{
+            color: black;
+            background-color: $color-principal;
+            font-size: 24px;
+        }
+    }
+
+
+    .otrosvehiculos{
+        grid-column: 1 / 5;
+        text-align: center;
+    }
+
+    .c4{
+        grid-column: 1 / 3;
+        text-align: center;
+
+        a{
+            height: 10%;
+            width: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .berlingo{
+        grid-column: 3 / 5;
+        text-align: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+            padding-left: 10px;
+        }
+    }
+}
+
+/**--CENTRO INICIO--*/
+
+/*--RESPONSIVE--*/
+@media only screen and (max-width: 990px){
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .grid-layout{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 0.3fr;
+        grid-template-areas: 'c3' 
+                             'descripcion'
+                             'otrosvehiculos' 
+                             'c4'
+                             'berlingo';
+        
+    
+        .descripcion{
+            margin-top: 450px;
+        }
+        .c3 img{
+            width: 100vw;
+            height: 300px;
+       
+        }
+ 
+        .c4 img{
+            width: 100vw;
+            height: 500px;
+            margin-top: 10px;
+            border:none;
+        }
+        .berlingo{
+            margin-top: 600px;
+        
+            img{
+            width: 100vw;
+            height: 500px;
+            margin-top: 10px;
+            border:none;
+            }
+        }
+    }
+    .formularios{
+        width: 80%;
+        height: 90%;
+        margin-left: 13%;
+        padding-bottom: 40px;
+    }
+}
+
+/*--RESPONSIVE--*/
+
+/*--FRECUENTES--*/
+.pregunta{
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 25px;
+    font-size: $font-size-parrafos;
+}
+/*--FRECUENTES--*/
+
+.carousel-item img{
+    width: 500px;
+    height: 800px;
+}
+
+.titulo-vehiculos{
+    text-align: center;
+    padding-left: 300px;
+    
+}
+.muestra1{
+    height: 300px;
+}

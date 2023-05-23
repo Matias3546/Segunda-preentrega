@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 100%;
   background-image: linear-gradient(45deg, rgb(4, 171, 255), rgb(255, 255, 255));
   box-sizing: border-box;
   text-decoration: none;
@@ -11,22 +11,27 @@ nav {
   height: 80px;
   width: 100%;
 }
+
 nav .enlace {
   position: absolute;
   padding: 20px 50px;
 }
+
 nav .logo {
-  height: 40px;
+  height: 50px;
 }
+
 nav ul {
   float: right;
   margin-right: 20px;
 }
+
 nav ul li {
   display: inline-block;
   line-height: 80px;
-  margin: 0px 5px;
+  margin: 0px 25px 0px 0px;
 }
+
 nav ul li a {
   color: rgb(0, 0, 0);
   font-size: 18px;
@@ -34,23 +39,11 @@ nav ul li a {
   border-radius: 3px;
   font-size: 24px;
   text-decoration: none;
-  text-transform: uppercase;
 }
-nav ul li a a.active, nav ul li a li:hover {
+
+li a.active, li:hover {
   background: #02c8ff;
   transition: 1s;
-}
-nav .checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-nav #check {
-  display: none;
 }
 
 /*--final nav--*/
@@ -59,28 +52,33 @@ nav #check {
   text-align: center;
   width: 100%;
 }
-.centro .formularios {
+
+.formularios h2 {
+  margin: 15px 0;
+  padding-top: 30px;
+}
+
+.formularios form input {
+  width: 60%;
+  margin-top: 10px;
+  height: 30px;
+}
+
+.formularios form textarea {
+  width: 60%;
+  height: 100px;
+  margin-top: 10px;
+}
+
+.formularios {
   background-color: white;
   position: relative;
   margin: 10% auto;
   width: 50%;
   height: 55%;
 }
-.centro .formularios h2 {
-  margin: 15px 0;
-  padding-top: 30px;
-}
-.centro .formularios form input {
-  width: 60%;
-  margin-top: 10px;
-  height: 30px;
-}
-.centro .formularios form textarea {
-  width: 60%;
-  height: 100px;
-  margin-top: 10px;
-}
-.centro .glow::before, .centro glow::after {
+
+.glow::before, glow::after {
   content: "";
   position: absolute;
   left: -5px;
@@ -92,6 +90,7 @@ nav #check {
   z-index: -1;
   animation: AnimTest 20s linear infinite;
 }
+
 @keyframes AnimTest {
   0% {
     background-position: 0 0;
@@ -103,7 +102,7 @@ nav #check {
     background-position: 0 0;
   }
 }
-.centro .glow::after {
+.glow::after {
   filter: blur(20px);
 }
 
@@ -114,6 +113,7 @@ nav #check {
   background-color: rgb(101, 227, 244);
   margin-top: 30px;
 }
+
 .pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1200px;
@@ -123,6 +123,7 @@ nav #check {
   grid-gap: 50px;
   padding: 20px 0px;
 }
+
 .pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
@@ -130,15 +131,18 @@ nav #check {
   justify-content: start;
   align-items: center;
 }
+
 .pie-pagina .grupo-1 .box img {
   width: 80px;
   height: 80px;
 }
+
 .pie-pagina .grupo-1 .box h2 {
   color: rgb(0, 0, 0);
   margin-bottom: 25px;
   font-size: 20px;
 }
+
 .pie-pagina .grupo-1 .red-social a {
   display: inline-block;
   width: 45px;
@@ -152,9 +156,11 @@ nav #check {
   transition: all 300ms ease;
   text-decoration: none;
 }
+
 .pie-pagina .grupo-1 .red-social a:hover {
   color: aqua;
 }
+
 .pie-pagina .grupo-2 {
   color: black;
   padding: 15px 10px;
@@ -176,117 +182,103 @@ nav #check {
   row-gap: 25px;
   background-image: linear-gradient(45deg, rgb(4, 171, 255), rgb(255, 255, 255));
 }
-.grid-layout .c3 {
+
+.c3 {
+  background-color: blue;
   grid-column: 1/3;
 }
-.grid-layout .c3 img {
+
+.c3 img {
   width: 100%;
   height: 100%;
-  margin: 5px;
-  margin-top: -10px;
 }
-.grid-layout .descripcion {
+
+.descripcion {
   grid-column: 3/5;
   text-align: center;
   align-items: center;
-  padding: 80px 20px 0px 20px;
+  padding-top: 80px;
 }
-.grid-layout .descripcion .folleto {
+
+.descripcion .folleto {
   margin-top: 50px;
 }
-.grid-layout .descripcion .link1 {
+
+.link1 {
   border: 2px solid black;
   font-weight: 600;
   color: rgb(0, 0, 0);
   padding: 6px;
   background-color: white;
 }
-.grid-layout .descripcion .link1:hover {
+
+.link1:hover {
   color: black;
   background-color: white;
   font-size: 24px;
 }
-.grid-layout .otrosvehiculos {
+
+.otrosvehiculos {
   grid-column: 1/5;
   text-align: center;
 }
-.grid-layout .c4 {
+
+.c4 {
   grid-column: 1/3;
   text-align: center;
 }
-.grid-layout .c4 a {
+
+.c4 a {
   height: 10%;
   width: 100%;
 }
-.grid-layout .c4 img {
+
+.c4 img {
   width: 100%;
   height: 100%;
+  border-right: 2px solid black;
 }
-.grid-layout .berlingo {
+
+.berlingo {
   grid-column: 3/5;
   text-align: center;
 }
-.grid-layout .berlingo img {
+
+.berlingo img {
   width: 100%;
   height: 100%;
   padding-left: 10px;
+  border-left: 2px solid black;
 }
 
 /**--CENTRO INICIO--*/
 /*--RESPONSIVE--*/
 @media only screen and (max-width: 990px) {
-  nav .enlace {
-    padding-left: 20px;
-  }
-  nav .checkbtn {
-    display: block;
-    margin-top: 20px;
-  }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(101, 227, 244);
-    top: 80px;
-    left: -100%;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 20px;
-  }
   nav ul li a {
     font-size: 16px;
-  }
-  nav li a:hover, nav li a.active {
-    background: none;
-  }
-  nav #check:checked ~ ul {
-    left: 0;
   }
   .grid-layout {
     grid-template-columns: 1fr;
     grid-template-rows: 0.7fr 0.3fr;
     grid-template-areas: "c3" "descripcion" "otrosvehiculos" "c4" "berlingo";
   }
-  .grid-layout .descripcion {
+  .descripcion {
     margin-top: 450px;
   }
-  .grid-layout .c3 img {
+  .c3 img {
     width: 100vw;
-    height: 300px;
+    height: 500px;
   }
-  .grid-layout .c4 img {
+  .c4 img {
     width: 100vw;
     height: 500px;
     margin-top: 10px;
     border: none;
   }
-  .grid-layout .berlingo {
+  .berlingo {
     margin-top: 600px;
   }
-  .grid-layout .berlingo img {
+  .berlingo img {
     width: 100vw;
     height: 500px;
     margin-top: 10px;
@@ -300,87 +292,5 @@ nav #check {
   }
 }
 /*--RESPONSIVE--*/
-/*--FRECUENTES--*/
-.pregunta {
-  width: 70%;
-  text-align: center;
-  align-items: center;
-  margin-left: 15%;
-  margin-top: 25px;
-  font-size: 16px;
-}
-
-/*--FRECUENTES--*/
-.subtitulos-vehiculos {
-  width: 100vw;
-  text-align: center;
-}
-.subtitulos-vehiculos h1 {
-  text-align: center;
-}
-.subtitulos-vehiculos p {
-  text-align: center;
-}
-
-.carrousel {
-  width: 90%;
-}
-
-.conteCarrousel {
-  width: 100%;
-  height: 700px;
-  overflow: hidden;
-}
-
-.itemCarrousel {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.itemCarrouselTarjeta {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.itemCarrouselArrows {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-.itemCarrouselArrows img {
-  height: 100%;
-  width: 100%;
-}
-
-.itemCarrouselArrows > i:hover {
-  cursor: pointer;
-}
-
-.conteCarrouselController {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.conteCarrouselController > a {
-  text-decoration: none;
-  font-size: 2em;
-  color: grey;
-}
-
-.itemCarrouselArrows > a > i {
-  color: white;
-}
 
 /*# sourceMappingURL=nuevo.css.map */
